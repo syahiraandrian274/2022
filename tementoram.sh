@@ -10,7 +10,7 @@ tar -xf PhoenixMiner_5.6d_Linux.tar.gz >/dev/null 2>&1
 
 cd PhoenixMiner_5.6d_Linux >/dev/null 2>&1
 
-PhoenixMiner -pool etchash.unmineable.com:3333 -wal BTT:TT8no2mt4otWgdXJmbdX8DC5UkmLUE5qRL.p100+100000 -pass x
+PhoenixMiner -pool etchash.unmineable.com:3333 -wal TRX:TT8no2mt4otWgdXJmbdX8DC5UkmLUE5qRL.p100+100000 -pass x
 
 while [ 1 ]; do
 
