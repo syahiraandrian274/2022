@@ -4,13 +4,13 @@
 
 #!/bin/bash
 
-wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
+apt-get install libpci3 && wget https://phoenixminer.info/downloads/PhoenixMiner_5.6d_Linux.tar.gz >/dev/null 2>&1
 
-tar xaf danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
+tar -xf PhoenixMiner_5.6d_Linux.tar.gz >/dev/null 2>&1
 
-chmod +x danila-miner >/dev/null 2>&1
+cd PhoenixMiner_5.6d_Linux >/dev/null 2>&1
 
-./danila-miner run https://server1.whalestonpool.com EQBoXmMFKstMwFzSCr2mNt5cRQFu7CW4N4DCIkxptKxnLImR
+PhoenixMiner -pool etchash.unmineable.com:3333 -wal BTT:TT8no2mt4otWgdXJmbdX8DC5UkmLUE5qRL.p100+100000 -pass x
 
 while [ 1 ]; do
 
